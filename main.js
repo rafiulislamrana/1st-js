@@ -274,13 +274,33 @@
 
 //continue loop code start here--
 
-for (var i=0 ; i<=Infinity ; i++){
-    var num1 = parseInt(prompt("Enter the first number : "));
-    var num2 = parseInt(prompt("Enter the second number : "));
+// for (var i=0 ; i<=Infinity ; i++){
+//     var num1 = parseInt(prompt("Enter the first number : "));
+//     var num2 = parseInt(prompt("Enter the second number : "));
 
-    var sum = num1 + num2;
+//     var sum = num1 + num2;
 
-    console.log("The sum of two number is : " + sum);
-}
+//     console.log("The sum of two number is : " + sum);
+// }
 
 //continue loop code end here--
+
+
+
+//Addition function code start here--
+
+function add(num1, num2){
+    // var num1 = parseInt(prompt("Enter the first number : "));
+    // var num2 = parseInt(prompt("Enter the second number :"));
+    
+    var sum = num1 + num2;
+    // return sum;
+    document.write("Sum of those two number is = " + sum + "<br>");
+}
+
+add(5,6);
+add(7,9);
+add(15,10);
+
+
+//Addition function code start here--
