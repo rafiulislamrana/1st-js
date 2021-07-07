@@ -289,18 +289,108 @@
 
 //Addition function code start here--
 
-function add(num1, num2){
-    // var num1 = parseInt(prompt("Enter the first number : "));
-    // var num2 = parseInt(prompt("Enter the second number :"));
+// function add(num1, num2){
+//     // var num1 = parseInt(prompt("Enter the first number : "));
+//     // var num2 = parseInt(prompt("Enter the second number :"));
     
-    var sum = num1 + num2;
-    // return sum;
-    document.write("Sum of those two number is = " + sum + "<br>");
-}
+//     var sum = num1 + num2;
+//     // return sum;
+//     document.write("Sum of those two number is = " + sum + "<br>");
+// }
 
-add(5,6);
-add(7,9);
-add(15,10);
+// add(5,6);
+// add(7,9);
+// add(15,10);
 
 
 //Addition function code start here--
+
+
+//Addition function code using return start here--
+
+// function addition(num1 , num2){
+//     var num1 = parseInt(prompt("Enter the first number : "));
+//     var num2 = parseInt(prompt("Enter the second number : "));
+//     var sum = num1 + num2;
+//     return sum;
+// }
+
+// document.write("Sum of numbers : " + addition());
+
+
+//Addition function code using return end here--
+
+
+
+//Addition function code using return in for loop infinity start here--
+// for (var i=1; i<=Infinity; i++){
+//     function addition(num1 , num2){
+//         var num1 = parseInt(prompt("Enter the first number : "));
+//         var num2 = parseInt(prompt("Enter the second number : "));
+//         var sum = num1 + num2;
+//         return sum;
+//     }
+    
+//     console.log("Sum of numbers : " + addition());
+// }
+//Addition function code using return in for loop infinity end here--
+
+
+
+//Addition function code start here--
+// function add(x,y){
+//     var sum = x + y;
+//     return sum;
+// }
+
+// document.write("SUM is : " + add(parseInt(prompt("First number : ")), parseInt(prompt("Second Number : "))));
+
+//Addition function code end here--
+
+
+
+
+//Calculator +,-,*,/ function code start here--
+
+function addition(x,y){
+    var sum = x + y;
+    document.write("Addition of two number is : " + sum);
+}
+
+function substract(x,y){
+    var sub = x - y;
+    document.write("Subtraction of two number is : " + sub);
+}
+
+function multiply(x,y){
+    var multiply = x * y;
+    document.write("Multipication of two number is : " + multiply);
+}
+
+function division(x,y){
+    var division = x / y;
+    document.write("Division of two number is : " + division);
+}
+
+var x = parseInt(prompt("Enter the first number : "));
+var y = parseInt(prompt("Enter the second number : "));
+
+var operator = prompt("Enter the operator : ");
+
+if(operator=="+"){
+    document.write(addition(x,y));
+}
+else if(operator=="-"){
+    document.write(substract(x,y));
+}
+else if(operator=="*"){
+    document.write(multiply(x,y));
+}
+else if(operator=="/"){
+    document.write(division(x,y));
+}
+else{
+    document.write("Invalid Operator. Please choose operator betweent +,-,* or /. <br> Thanks for using our calculator. ");
+}
+
+//Calculator +,-,*,/ function code end here--
