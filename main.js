@@ -352,45 +352,115 @@
 
 //Calculator +,-,*,/ function code start here--
 
-function addition(x,y){
-    var sum = x + y;
-    document.write("Addition of two number is : " + sum);
-}
+// function addition(x,y){
+//     var sum = x + y;
+//     document.write("Addition of two number is : " + sum);
+// }
 
-function substract(x,y){
-    var sub = x - y;
-    document.write("Subtraction of two number is : " + sub);
-}
+// function substract(x,y){
+//     var sub = x - y;
+//     document.write("Subtraction of two number is : " + sub);
+// }
 
-function multiply(x,y){
-    var multiply = x * y;
-    document.write("Multipication of two number is : " + multiply);
-}
+// function multiply(x,y){
+//     var multiply = x * y;
+//     document.write("Multipication of two number is : " + multiply);
+// }
 
-function division(x,y){
-    var division = x / y;
-    document.write("Division of two number is : " + division);
-}
+// function division(x,y){
+//     var division = x / y;
+//     document.write("Division of two number is : " + division);
+// }
 
-var x = parseInt(prompt("Enter the first number : "));
-var y = parseInt(prompt("Enter the second number : "));
+// var x = parseInt(prompt("Enter the first number : "));
+// var y = parseInt(prompt("Enter the second number : "));
 
-var operator = prompt("Enter the operator : ");
+// var operator = prompt("Enter the operator : ");
 
-if(operator=="+"){
-    document.write(addition(x,y));
-}
-else if(operator=="-"){
-    document.write(substract(x,y));
-}
-else if(operator=="*"){
-    document.write(multiply(x,y));
-}
-else if(operator=="/"){
-    document.write(division(x,y));
-}
-else{
-    document.write("Invalid Operator. Please choose operator betweent +,-,* or /. <br> Thanks for using our calculator. ");
-}
+// if(operator=="+"){
+//     document.write(addition(x,y));
+// }
+// else if(operator=="-"){
+//     document.write(substract(x,y));
+// }
+// else if(operator=="*"){
+//     document.write(multiply(x,y));
+// }
+// else if(operator=="/"){
+//     document.write(division(x,y));
+// }
+// else{
+//     document.write("Invalid Operator. Please choose operator betweent +,-,* or /. <br> Thanks for using our calculator. ");
+// }
 
 //Calculator +,-,*,/ function code end here--
+
+
+
+//Calculator +,-,*,/ function code start here--
+
+// function addition(x,y){
+//     var sum = x + y;
+//     return  document.write("Addition of two number is : " + sum).value;
+// }
+
+// function substract(x,y){
+//     var sub = x - y;
+//    return document.write("Subtraction of two number is : " + sub).value;
+// }
+
+// function multiply(x,y){
+//     var multiply = x * y;
+//     return document.write("Multipication of two number is : " + multiply).value;
+// }
+
+// function division(x,y){
+//     var division = x / y;
+//     return  document.write("Division of two number is : " + division).value;
+// }
+
+
+// var x = parseInt(prompt("Enter the first number : "));
+// var y = parseInt(prompt("Enter the second number : "));
+
+// var operator = prompt("Enter the operator : ");
+
+    
+// if(operator=="+"){
+//     document.write(addition(x,y));
+// }
+// else if(operator=="-"){
+//     document.write(substract(x,y));
+// }
+// else if(operator=="*"){
+//     document.write(multiply(x,y));
+// }
+// else if(operator=="/"){
+//     document.write(division(x,y));
+// }
+// else{
+//     document.write("Invalid Operator. Please choose operator betweent +,-,* or /. <br> Thanks for using our calculator. ");
+// }
+
+//Calculator +,-,*,/ function code end here--
+
+
+
+
+//array will loop code start here--
+
+var nums = new Array();
+var times = parseInt(prompt("How many numbers you wanna add & sum : "));
+
+for (var i=0 ; i<times ; i++){
+    nums[i] = parseInt(prompt("Enter all those numbers : "));
+}
+
+var sum = 0;
+
+for(var i=0 ; i<times ; i++){
+    sum = sum + nums[i]
+}
+
+console.log("The sum of those number is : " + sum);
+//array will loop code end here--10
