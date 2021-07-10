@@ -449,18 +449,18 @@
 
 //array will loop code start here--
 
-var nums = new Array();
-var times = parseInt(prompt("How many numbers you wanna add & sum : "));
+// var nums = new Array();
+// var times = parseInt(prompt("How many numbers you wanna add & sum : "));
 
-for (var i=0 ; i<times ; i++){
-    nums[i] = parseInt(prompt("Enter all those numbers : "));
-}
+// for (var i=0 ; i<times ; i++){
+//     nums[i] = parseInt(prompt("Enter all those numbers : "));
+// }
 
-var sum = 0;
+// var sum = 0;
 
-for(var i=0 ; i<times ; i++){
-    sum = sum + nums[i]
-}
+// for(var i=0 ; i<times ; i++){
+//     sum = sum + nums[i]
+// }
 
-console.log("The sum of those number is : " + sum);
+// console.log("The sum of those number is : " + sum);
 //array will loop code end here--10
