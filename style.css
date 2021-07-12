@@ -1,0 +1,29 @@
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+    animation-direction: alternate-reverse;
+}
+@keyframes example {
+    0% {
+        background-color: red; top: 0px; left: 0px;
+    }
+    25% {
+        background-color: rosybrown; left: 1024px; top: 0px;
+    }
+    50% {
+        background-color: royalblue; top: 400px; left: 1024px;
+    }
+    75% {
+        background-color: seagreen; top: 400px; left: 0px;
+    }
+    100% {
+        background-color: red; top: 0px; left: 0px;
+    }
+  }
