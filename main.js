@@ -463,4 +463,42 @@
 // }
 
 // console.log("The sum of those number is : " + sum);
-//array will loop code end here--10
+//array will loop code end here--
+
+
+
+
+//Finding the prime number code start here--
+
+var num = parseInt(prompt("Enter the number : "));
+
+if(num==2){
+    document.write("<br>" + num + " is a prime number") 
+}
+else if(num==3){
+    document.write("<br>" + num + " is a prime number")
+}
+else if(num==5){
+    document.write("<br>" + num + " is a prime number")
+}
+else if(num%2==0 || num%3==0 || num%5==0){
+    document.write("<br>" + num + " is not a prime number")
+}
+else{
+    document.write("<br>" + num + " is a prime number")
+}
+
+//Finding the prime number code end here--
+
+
+
+
+//Count the number code end here--
+// var num = new Array();
+// num = parseInt(prompt("Enter the number : "))
+// document.write(num.length)
+//Count the number code end here--
+
+
+
+// 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199
