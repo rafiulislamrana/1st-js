@@ -470,23 +470,23 @@
 
 //Finding the prime number code start here--
 
-var num = parseInt(prompt("Enter the number : "));
+// var num = parseInt(prompt("Enter the number : "));
 
-if(num==2){
-    document.write("<br>" + num + " is a prime number") 
-}
-else if(num==3){
-    document.write("<br>" + num + " is a prime number")
-}
-else if(num==5){
-    document.write("<br>" + num + " is a prime number")
-}
-else if(num%2==0 || num%3==0 || num%5==0){
-    document.write("<br>" + num + " is not a prime number")
-}
-else{
-    document.write("<br>" + num + " is a prime number")
-}
+// if(num==2){
+//     document.write("<br>" + num + " is a prime number") 
+// }
+// else if(num==3){
+//     document.write("<br>" + num + " is a prime number")
+// }
+// else if(num==5){
+//     document.write("<br>" + num + " is a prime number")
+// }
+// else if(num%2==0 || num%3==0 || num%5==0){
+//     document.write("<br>" + num + " is not a prime number")
+// }
+// else{
+//     document.write("<br>" + num + " is a prime number")
+// }
 
 //Finding the prime number code end here--
 
@@ -502,3 +502,25 @@ else{
 
 
 // 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199
+
+
+
+//Print and sum all value is array code start here--
+
+var value = new Array();
+var count = parseInt(prompt("How many values you want to store to sum : "))
+for(var i=0 ; i<count ; i++){
+    value[i] = parseInt(prompt("Enter those " + count + " values one by one :"))
+}
+
+document.write(value);
+var sum = 0;
+
+for (var i=0 ; i<count ; i++){
+    sum = sum + value[i];
+}
+document.write("<br> Sum is : " + sum + "<br>");
+document.write(" End <br>")
+
+
+//Print and sum all value is array code end here--
