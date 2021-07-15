@@ -507,20 +507,51 @@
 
 //Print and sum all value is array code start here--
 
-var value = new Array();
-var count = parseInt(prompt("How many values you want to store to sum : "))
-for(var i=0 ; i<count ; i++){
-    value[i] = parseInt(prompt("Enter those " + count + " values one by one :"))
-}
+// var value = new Array();
+// var count = parseInt(prompt("How many values you want to store to sum : "))
+// for(var i=0 ; i<count ; i++){
+//     value[i] = parseInt(prompt("Enter those " + count + " values one by one :"))
+// }
 
-document.write(value);
-var sum = 0;
+// document.write(value);
+// var sum = 0;
 
-for (var i=0 ; i<count ; i++){
-    sum = sum + value[i];
-}
-document.write("<br> Sum is : " + sum + "<br>");
-document.write(" End <br>")
+// for (var i=0 ; i<count ; i++){
+//     sum = sum + value[i];
+// }
+// document.write("<br> Sum is : " + sum + "<br>");
+// document.write(" End <br>")
 
 
 //Print and sum all value is array code end here--
+
+
+
+
+//Guessing game code start here--
+
+var times = parseInt(prompt("How many times you want to play : "))
+var totalWin = 0;
+var totalLost = 0;
+
+for(var i=1 ; i<=times ; i++){
+    var guessNumber = parseInt(prompt("Enter a random number 1 to 5 : "));
+
+    var randomNumber = Math.floor(Math.random()* 5 )  + 1;
+
+    if(guessNumber==randomNumber){
+        console.log("CONGRATULATIONS! You WON.")
+        totalWin = totalWin + 1;
+    }
+    else{
+        console.log("SORRY! You are lost. The random number was : " + randomNumber);
+        totalLost = totalLost + 1;
+    }
+}
+
+document.write("You played total " + times + " game <br>");
+document.write("You have won : " + totalWin + " times <br>");
+document.write("You have lost : " + totalLost + " times");
+
+
+//Guessing game code end here--
