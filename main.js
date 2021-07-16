@@ -530,28 +530,37 @@
 
 //Guessing game code start here--
 
-var times = parseInt(prompt("How many times you want to play : "))
-var totalWin = 0;
-var totalLost = 0;
+// var times = parseInt(prompt("How many times you want to play : "))
+// var totalWin = 0;
+// var totalLost = 0;
 
-for(var i=1 ; i<=times ; i++){
-    var guessNumber = parseInt(prompt("Enter a random number 1 to 5 : "));
+// for(var i=1 ; i<=times ; i++){
+//     var guessNumber = parseInt(prompt("Enter a random number 1 to 5 : "));
 
-    var randomNumber = Math.floor(Math.random()* 5 )  + 1;
+//     var randomNumber = Math.floor(Math.random()* 5 )  + 1;
 
-    if(guessNumber==randomNumber){
-        console.log("CONGRATULATIONS! You WON.")
-        totalWin = totalWin + 1;
-    }
-    else{
-        console.log("SORRY! You are lost. The random number was : " + randomNumber);
-        totalLost = totalLost + 1;
-    }
-}
+//     if(guessNumber==randomNumber){
+//         console.log("CONGRATULATIONS! You WON.")
+//         totalWin = totalWin + 1;
+//     }
+//     else{
+//         console.log("SORRY! You are lost. The random number was : " + randomNumber);
+//         totalLost = totalLost + 1;
+//     }
+// }
 
-document.write("You played total " + times + " game <br>");
-document.write("You have won : " + totalWin + " times <br>");
-document.write("You have lost : " + totalLost + " times");
+// document.write("You played total " + times + " game <br>");
+// document.write("You have won : " + totalWin + " times <br>");
+// document.write("You have lost : " + totalLost + " times");
 
 
 //Guessing game code end here--
+
+
+
+
+//Javascript DOM practise code start here--
+
+document.querySelector(.btn1)
+
+//Javascript DOM practise code end here--
